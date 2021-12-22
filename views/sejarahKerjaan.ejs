@@ -38,18 +38,19 @@
     >.
   </p>
   <!-- form input -->
-  <div class="flex px-4 py-4 mt-5 rounded-md w-full border shadow-lg">
+  <div class="flex px-4 py-4 mt-5 w-full">
     <div class="basis-10/12 flex">
       <!-- input -->
       <div class="relative basis-1/4 grid justify-items-start">
-        <!-- search box -->
+        <!-- input box -->
         <input
+          id="input-tanggal"
           type=""
           name=""
           class="
             font-sans
             leading-snug
-            border-b border-black
+            border-b-2 border-black
             block
             w-11/12
             appearance-none
@@ -57,18 +58,42 @@
             py-1
             px-2
             tracking-wider
+            peer
+            placeholder-transparent
+            focus:outline-none focus:border-rose-600
           "
           placeholder="Tanggal"
         />
+        <label
+          for="input-tanggal"
+          class="
+            tracking-wider
+            text-base
+            font-sans
+            absolute
+            left-2
+            text-gray-600
+            transition-all
+            ease-in-out
+            duration-300
+            peer-placeholder-shown:text-base
+            peer-placeholder-shown:text-gray-400
+            peer-placeholder-shown:top-1
+            peer-focus:-top-6 peer-focus:text-black peer-focus:text-base
+          "
+          >Tanggal</label
+        >
       </div>
       <div class="relative basis-1/4 grid justify-items-start">
-        <!-- search box -->
+        <!-- input box -->
         <input
+          id="input-lokasi"
           type=""
           name=""
           class="
+            font-sans
             leading-snug
-            border-b border-black
+            border-b-2 border-black
             block
             w-11/12
             appearance-none
@@ -76,18 +101,42 @@
             py-1
             px-2
             tracking-wider
+            peer
+            placeholder-transparent
+            focus:outline-none focus:border-rose-600
           "
           placeholder="Lokasi"
         />
+        <label
+          for="input-lokasi"
+          class="
+            tracking-wider
+            text-base
+            font-sans
+            absolute
+            left-2
+            text-gray-600
+            transition-all
+            ease-in-out
+            duration-300
+            peer-placeholder-shown:text-base
+            peer-placeholder-shown:text-gray-400
+            peer-placeholder-shown:top-1
+            peer-focus:-top-6 peer-focus:text-black peer-focus:text-base
+          "
+          >Lokasi</label
+        >
       </div>
       <div class="relative basis-1/4 grid justify-items-start">
-        <!-- search box -->
+        <!-- input box -->
         <input
+          id="input-pekerjaan"
           type=""
           name=""
           class="
+            font-sans
             leading-snug
-            border-b border-black
+            border-b-2 border-black
             block
             w-11/12
             appearance-none
@@ -95,18 +144,42 @@
             py-1
             px-2
             tracking-wider
+            peer
+            placeholder-transparent
+            focus:outline-none focus:border-rose-600
           "
           placeholder="Pekerjaan"
         />
+        <label
+          for="input-pekerjaan"
+          class="
+            tracking-wider
+            text-base
+            font-sans
+            absolute
+            left-2
+            text-gray-600
+            transition-all
+            ease-in-out
+            duration-300
+            peer-placeholder-shown:text-base
+            peer-placeholder-shown:text-gray-400
+            peer-placeholder-shown:top-1
+            peer-focus:-top-6 peer-focus:text-black peer-focus:text-base
+          "
+          >Pekerjaan</label
+        >
       </div>
       <div class="relative basis-1/4 grid justify-items-start">
-        <!-- search box -->
+        <!-- input box -->
         <input
+          id="input-personil"
           type=""
           name=""
           class="
+            font-sans
             leading-snug
-            border-b border-black
+            border-b-2 border-black
             block
             w-11/12
             appearance-none
@@ -114,9 +187,31 @@
             py-1
             px-2
             tracking-wider
+            peer
+            placeholder-transparent
+            focus:outline-none focus:border-rose-600
           "
           placeholder="Personil"
         />
+        <label
+          for="input-personil"
+          class="
+            tracking-wider
+            text-base
+            font-sans
+            absolute
+            left-2
+            text-gray-600
+            transition-all
+            ease-in-out
+            duration-300
+            peer-placeholder-shown:text-base
+            peer-placeholder-shown:text-gray-400
+            peer-placeholder-shown:top-1
+            peer-focus:-top-6 peer-focus:text-black peer-focus:text-base
+          "
+          >Personil</label
+        >
       </div>
     </div>
     <!-- tombol -->
@@ -302,3 +397,5 @@
     </div>
   </div>
 </div>
+
+<script></script>

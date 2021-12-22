@@ -26,6 +26,7 @@
     yang telah lalu. <br />
     Update pekerjaan dapat dilakukan dengan cara
     <a
+      id="tulis-sejarah"
       class="
         font-bold
         underline
@@ -38,14 +39,14 @@
     >.
   </p>
   <!-- form input -->
-  <div class="flex px-4 py-4 mt-5 w-full">
+  <div id="form-input" class="flex px-4 py-4 mt-5 w-full">
     <div class="basis-10/12 flex">
       <!-- input -->
       <div class="relative basis-1/4 grid justify-items-start">
         <!-- input box -->
         <input
           id="input-tanggal"
-          type=""
+          type="date"
           name=""
           class="
             font-sans
@@ -59,26 +60,24 @@
             px-2
             tracking-wider
             peer
-            placeholder-transparent
             focus:outline-none focus:border-rose-600
           "
           placeholder="Tanggal"
         />
         <label
+          id="label-tanggal"
           for="input-tanggal"
           class="
+            top-1
             tracking-wider
             text-base
             font-sans
             absolute
             left-2
-            text-gray-600
             transition-all
             ease-in-out
+            opacity-0
             duration-300
-            peer-placeholder-shown:text-base
-            peer-placeholder-shown:text-gray-400
-            peer-placeholder-shown:top-1
             peer-focus:-top-6 peer-focus:text-black peer-focus:text-base
           "
           >Tanggal</label
@@ -110,6 +109,7 @@
         <label
           for="input-lokasi"
           class="
+            -top-6
             tracking-wider
             text-base
             font-sans
@@ -153,6 +153,7 @@
         <label
           for="input-pekerjaan"
           class="
+            -top-6
             tracking-wider
             text-base
             font-sans
@@ -196,6 +197,7 @@
         <label
           for="input-personil"
           class="
+            -top-6
             tracking-wider
             text-base
             font-sans
@@ -219,6 +221,7 @@
       <div class="relative grid justify-items-center">
         <!-- component -->
         <button
+          id="btn-tulis"
           class="
             bg-blue-700
             hover:bg-blue-600
@@ -398,4 +401,4 @@
   </div>
 </div>
 
-<script></script>
+<script src="../scripts/sejarahKerjaan.js"></script>

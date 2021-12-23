@@ -6,7 +6,7 @@
   "scripts": {
     "build:css": "postcss src/input.css -o public/styles/styles.css",
     "start": "npm run build:css && npx nodemon app",
-    "dev1": "browser-sync start --proxy http://localhost:5000/ --files './**/*.ejs'",
+    "dev1": "browser-sync start --proxy http://localhost:5000/ --files '**/**/*.*'",
     "dev2": "npx tailwindcss -i src/input.css -o public/styles/styles.css --watch"
   },
   "author": "muflih",

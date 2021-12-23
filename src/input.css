@@ -27,5 +27,17 @@
 }
 
 .dt-button {
-  @apply px-4 font-medium tracking-wide gap-5;
+  @apply px-4 font-medium tracking-wider gap-5;
+}
+
+.fade-out {
+  @apply opacity-0 transition-all ease-in-out duration-1000;
+}
+
+.fade-in {
+  @apply opacity-100 transition-all ease-in-out duration-600;
+}
+
+.highlight {
+  @apply italic;
 }

@@ -681,6 +681,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-items: center;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .overflow-x-auto {
   overflow-x: auto;
 }
@@ -1077,7 +1081,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 1rem;
   padding-right: 1rem;
   font-weight: 500;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.05em;
+}
+
+.fade-away {
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fade-in {
+  opacity: 1;
+  transition-property: all;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.highlight-in {
+  font-style: italic;
+  transition-property: all;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hover\:bg-blue-600:hover {

@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.dataTables_empty {
+  @apply text-base text-center px-4 py-4;
+}
+
+.pagination_Number {
+  @apply leading-relaxed cursor-pointer mx-2 hover:text-blue-600 opacity-60;
+}
+
+.active_Page {
+  @apply text-blue-600 opacity-100;
+}
+
+.table_Bottom {
+  @apply flex flex-row text-base tracking-wide font-medium border-t-2;
+}
+
+.dataTables_info {
+  @apply basis-1/2 py-4 px-4;
+}
+
+.dataTables_paginate {
+  @apply cursor-pointer basis-1/2 py-4 px-4 flex flex-row justify-end gap-8 text-lg;
+}
+
+.dt-button {
+  @apply px-4 font-medium tracking-wide gap-5;
+}

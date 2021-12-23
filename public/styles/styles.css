@@ -1084,25 +1084,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   letter-spacing: 0.05em;
 }
 
-.fade-away {
+.fade-out {
   opacity: 0;
   transition-property: all;
-  transition-duration: 1000ms;
+  transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .fade-in {
   opacity: 1;
   transition-property: all;
-  transition-duration: 1000ms;
+  transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.highlight-in {
+.highlight {
   font-style: italic;
-  transition-property: all;
-  transition-duration: 1000ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hover\:bg-blue-600:hover {

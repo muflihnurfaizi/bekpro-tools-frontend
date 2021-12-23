@@ -31,11 +31,11 @@
 }
 
 .fade-out {
-  @apply opacity-0 transition-all ease-in-out duration-1000;
+  @apply opacity-0 transition-all ease-in-out duration-500;
 }
 
 .fade-in {
-  @apply opacity-100 transition-all ease-in-out duration-600;
+  @apply opacity-100 transition-all ease-in-out duration-500;
 }
 
 .highlight {

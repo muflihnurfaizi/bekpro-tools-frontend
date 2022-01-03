@@ -45,205 +45,212 @@
   </p>
   <!-- form input -->
   <div id="form-input" class="hidden">
-    <div class="flex px-4 py-4 mt-5 w-full">
-      <div class="flex basis-10/12">
-        <!-- input -->
-        <div class="relative basis-1/4 grid justify-items-start">
-          <!-- input box -->
-          <input
-            id="input-tanggal"
-            type="date"
-            name=""
-            class="
-              font-sans
-              leading-snug
-              border-b-2 border-black
-              block
-              w-11/12
-              appearance-none
-              text-base text-gray-600
-              py-1
-              px-2
-              tracking-wider
-              peer
-              focus:outline-none focus:border-rose-600
-            "
-            placeholder="Tanggal"
-          />
-          <label
-            id="label-tanggal"
-            for="input-tanggal"
-            class="
-              top-1
-              tracking-wider
-              text-base
-              font-sans
-              absolute
-              left-2
-              transition-all
-              ease-in-out
-              opacity-0
-              duration-300
-              peer-focus:-top-6 peer-focus:text-black peer-focus:text-base
-            "
-            >Tanggal</label
-          >
+    <form id="form-submit">
+      <div class="flex px-4 py-4 mt-5 w-full">
+        <div class="flex basis-10/12">
+          <!-- input -->
+          <div class="relative basis-1/4 grid justify-items-start">
+            <!-- input box -->
+            <input
+              id="input-tanggal"
+              type="date"
+              name=""
+              class="
+                font-sans
+                leading-snug
+                border-b-2 border-black
+                block
+                w-11/12
+                appearance-none
+                text-base text-gray-600
+                py-1
+                px-2
+                tracking-wider
+                peer
+                focus:outline-none focus:border-rose-600
+              "
+              required
+              placeholder="Tanggal"
+            />
+            <label
+              id="label-tanggal"
+              for="input-tanggal"
+              class="
+                top-1
+                tracking-wider
+                text-base
+                font-sans
+                absolute
+                left-2
+                transition-all
+                ease-in-out
+                opacity-0
+                duration-300
+                peer-focus:-top-6 peer-focus:text-black peer-focus:text-base
+              "
+              >Tanggal</label
+            >
+          </div>
+          <div class="relative basis-1/4 grid justify-items-start">
+            <!-- input box -->
+            <input
+              id="input-lokasi"
+              type=""
+              name=""
+              class="
+                font-sans
+                leading-snug
+                border-b-2 border-black
+                block
+                w-11/12
+                appearance-none
+                text-base text-gray-600
+                py-1
+                px-2
+                tracking-wider
+                peer
+                placeholder-transparent
+                focus:outline-none focus:border-rose-600
+              "
+              required
+              placeholder="Lokasi"
+            />
+            <label
+              for="input-lokasi"
+              class="
+                -top-6
+                tracking-wider
+                text-base
+                font-sans
+                absolute
+                left-2
+                text-gray-600
+                transition-all
+                ease-in-out
+                duration-300
+                peer-placeholder-shown:text-base
+                peer-placeholder-shown:text-gray-400
+                peer-placeholder-shown:top-1
+                peer-focus:-top-6 peer-focus:text-black peer-focus:text-base
+              "
+              >Lokasi</label
+            >
+          </div>
+          <div class="relative basis-1/4 grid justify-items-start">
+            <!-- input box -->
+            <input
+              id="input-pekerjaan"
+              type=""
+              name=""
+              class="
+                font-sans
+                leading-snug
+                border-b-2 border-black
+                block
+                w-11/12
+                appearance-none
+                text-base text-gray-600
+                py-1
+                px-2
+                tracking-wider
+                peer
+                placeholder-transparent
+                focus:outline-none focus:border-rose-600
+              "
+              required
+              placeholder="Pekerjaan"
+            />
+            <label
+              for="input-pekerjaan"
+              class="
+                -top-6
+                tracking-wider
+                text-base
+                font-sans
+                absolute
+                left-2
+                text-gray-600
+                transition-all
+                ease-in-out
+                duration-300
+                peer-placeholder-shown:text-base
+                peer-placeholder-shown:text-gray-400
+                peer-placeholder-shown:top-1
+                peer-focus:-top-6 peer-focus:text-black peer-focus:text-base
+              "
+              >Pekerjaan</label
+            >
+          </div>
+          <div class="relative basis-1/4 grid justify-items-start">
+            <!-- input box -->
+            <input
+              id="input-personil"
+              type=""
+              name=""
+              class="
+                font-sans
+                leading-snug
+                border-b-2 border-black
+                block
+                w-11/12
+                appearance-none
+                text-base text-gray-600
+                py-1
+                px-2
+                tracking-wider
+                peer
+                placeholder-transparent
+                focus:outline-none focus:border-rose-600
+              "
+              required
+              placeholder="Personil"
+            />
+            <label
+              for="input-personil"
+              class="
+                -top-6
+                tracking-wider
+                text-base
+                font-sans
+                absolute
+                left-2
+                text-gray-600
+                transition-all
+                ease-in-out
+                duration-300
+                peer-placeholder-shown:text-base
+                peer-placeholder-shown:text-gray-400
+                peer-placeholder-shown:top-1
+                peer-focus:-top-6 peer-focus:text-black peer-focus:text-base
+              "
+              >Personil</label
+            >
+          </div>
         </div>
-        <div class="relative basis-1/4 grid justify-items-start">
-          <!-- input box -->
-          <input
-            id="input-lokasi"
-            type=""
-            name=""
-            class="
-              font-sans
-              leading-snug
-              border-b-2 border-black
-              block
-              w-11/12
-              appearance-none
-              text-base text-gray-600
-              py-1
-              px-2
-              tracking-wider
-              peer
-              placeholder-transparent
-              focus:outline-none focus:border-rose-600
-            "
-            placeholder="Lokasi"
-          />
-          <label
-            for="input-lokasi"
-            class="
-              -top-6
-              tracking-wider
-              text-base
-              font-sans
-              absolute
-              left-2
-              text-gray-600
-              transition-all
-              ease-in-out
-              duration-300
-              peer-placeholder-shown:text-base
-              peer-placeholder-shown:text-gray-400
-              peer-placeholder-shown:top-1
-              peer-focus:-top-6 peer-focus:text-black peer-focus:text-base
-            "
-            >Lokasi</label
-          >
-        </div>
-        <div class="relative basis-1/4 grid justify-items-start">
-          <!-- input box -->
-          <input
-            id="input-pekerjaan"
-            type=""
-            name=""
-            class="
-              font-sans
-              leading-snug
-              border-b-2 border-black
-              block
-              w-11/12
-              appearance-none
-              text-base text-gray-600
-              py-1
-              px-2
-              tracking-wider
-              peer
-              placeholder-transparent
-              focus:outline-none focus:border-rose-600
-            "
-            placeholder="Pekerjaan"
-          />
-          <label
-            for="input-pekerjaan"
-            class="
-              -top-6
-              tracking-wider
-              text-base
-              font-sans
-              absolute
-              left-2
-              text-gray-600
-              transition-all
-              ease-in-out
-              duration-300
-              peer-placeholder-shown:text-base
-              peer-placeholder-shown:text-gray-400
-              peer-placeholder-shown:top-1
-              peer-focus:-top-6 peer-focus:text-black peer-focus:text-base
-            "
-            >Pekerjaan</label
-          >
-        </div>
-        <div class="relative basis-1/4 grid justify-items-start">
-          <!-- input box -->
-          <input
-            id="input-personil"
-            type=""
-            name=""
-            class="
-              font-sans
-              leading-snug
-              border-b-2 border-black
-              block
-              w-11/12
-              appearance-none
-              text-base text-gray-600
-              py-1
-              px-2
-              tracking-wider
-              peer
-              placeholder-transparent
-              focus:outline-none focus:border-rose-600
-            "
-            placeholder="Personil"
-          />
-          <label
-            for="input-personil"
-            class="
-              -top-6
-              tracking-wider
-              text-base
-              font-sans
-              absolute
-              left-2
-              text-gray-600
-              transition-all
-              ease-in-out
-              duration-300
-              peer-placeholder-shown:text-base
-              peer-placeholder-shown:text-gray-400
-              peer-placeholder-shown:top-1
-              peer-focus:-top-6 peer-focus:text-black peer-focus:text-base
-            "
-            >Personil</label
-          >
+        <!-- tombol -->
+        <div class="basis-2/12">
+          <div class="relative grid justify-items-center">
+            <!-- component -->
+            <button
+              id="btn-tulis"
+              type="submit"
+              class="
+                bg-blue-700
+                hover:bg-blue-600
+                text-white
+                font-bold
+                w-3/4
+                py-1
+                rounded
+                tracking-widest
+              "
+            >
+              Tulis Sejarah
+            </button>
+          </div>
         </div>
       </div>
-      <!-- tombol -->
-      <div class="basis-2/12">
-        <div class="relative grid justify-items-center">
-          <!-- component -->
-          <button
-            id="btn-tulis"
-            class="
-              bg-blue-700
-              hover:bg-blue-600
-              text-white
-              font-bold
-              w-3/4
-              py-1
-              rounded
-              tracking-widest
-            "
-          >
-            Tulis Sejarah
-          </button>
-        </div>
-      </div>
-    </div>
+    </form>
   </div>
 
   <div>
@@ -333,31 +340,10 @@
               <th class="px-4 py-2 bg-zinc-100 cursor-pointer">Aksi</th>
             </tr>
           </thead>
-          <tbody class="text-base font-medium text-gray-700">
-            <tr class="hover:bg-gray-100 border-b border-gray-200 py-10">
-              <td class="px-4 py-4">18 Desember 2019</td>
-              <td class="px-4 py-4">GI Bekasi</td>
-              <td class="px-4 py-4">Recovery Gangguan Trafo 1 (Bucholz)</td>
-              <td class="px-4 py-4">
-                Hilman, Muflih, Hambali, Yadi, Victor, Wita
-              </td>
-              <td class="px-4 py-4">Hapus | Edit</td>
-            </tr>
-            <tr class="hover:bg-gray-100 border-b border-gray-200 py-4">
-              <td class="px-4 py-4 flex items-center">19 Desember 2019</td>
-              <td class="px-4 py-4">GIS Harapan Indah</td>
-              <td class="px-4 py-4">Pemeliharaan Bay Plumpang</td>
-              <td class="px-4 py-4">Hilman, Hambali, Yadi</td>
-              <td class="px-4 py-4">Hapus | Edit</td>
-            </tr>
-            <tr class="hover:bg-gray-100 border-gray-200">
-              <td class="px-4 py-4">20 Desember 2019</td>
-              <td class="px-4 py-4">Bogor</td>
-              <td class="px-4 py-4">TWMT Batch 2</td>
-              <td class="px-4 py-4">Muflih, Yadi, Victor, Wita</td>
-              <td class="px-4 py-4">Hapus | Edit</td>
-            </tr>
-          </tbody>
+          <tbody
+            id="table-body"
+            class="text-base font-medium text-gray-700"
+          ></tbody>
         </table>
       </div>
     </div>

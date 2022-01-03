@@ -41,3 +41,15 @@
 .highlight {
   @apply italic;
 }
+
+.tr {
+  @apply hover:bg-gray-100 border-b border-gray-200 py-10;
+}
+
+.td {
+  @apply px-4 py-4;
+}
+
+.delete {
+  @apply hover:text-rose-800 cursor-pointer;
+}

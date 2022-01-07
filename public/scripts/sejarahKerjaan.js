@@ -1,10 +1,12 @@
 $(async function () {
+  const uri = "https://api.muflihnurfaizi/api/v1";
+
   //render data
   async function getData() {
     try {
       const {
         data: { works },
-      } = await axios.get("http://localhost:5001/api/v1/works/");
+      } = await axios.get(`${uri}/works/`);
       if (works.length < 1) {
         //console.log("eweh data");
         return;
@@ -47,7 +49,7 @@ $(async function () {
   // Delete func
   $("#tableKerjaan").on("click", "a", async function () {
     let id = tableKerjaan.row($(this).parent("td").parent("tr")).id();
-    await axios.delete(`http://localhost:5001/api/v1/works/${id}`);
+    await axios.delete(`${uri}/works/${id}`);
     tableKerjaan.row($(this).parent("td").parent("tr")).remove().draw();
     //console.log(id);
     //alert("Clicked row id " + id);
@@ -94,7 +96,7 @@ $(async function () {
     let pekerjaan = $("#input-pekerjaan").val();
     let personil = sortName($("#input-personil").val());
     try {
-      await axios.post("http://localhost:5001/api/v1/works/", {
+      await axios.post(`${uri}/works/`, {
         tanggal,
         lokasi,
         pekerjaan,

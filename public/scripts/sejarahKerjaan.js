@@ -1,5 +1,5 @@
 $(async function () {
-  const uri = "https://api.muflihnurfaizi/api/v1";
+  const uri = "https://api.muflihnurfaizi.tech/api/v1";
 
   //render data
   async function getData() {
